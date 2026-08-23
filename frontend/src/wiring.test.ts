@@ -11,7 +11,7 @@ describe("WezTerm terminal plugin wiring", () => {
     activate({ app, subscriptions: [] });
     expect(activateProvider).toHaveBeenCalledWith(app, [], {
       pluginId: "soksak-plugin-terminal-wezterm", engineId: "wezterm",
-      recoverySidecar: "recovery", programId: "terminal-wezterm",
+      ptySidecarId: "soksak-sidecar-pty", terminalSidecarId: "soksak-sidecar-terminal-wezterm", programId: "terminal-wezterm",
     });
   });
 });
