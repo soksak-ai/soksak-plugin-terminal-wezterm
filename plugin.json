@@ -1,10 +1,10 @@
 {
   "id": "soksak-plugin-terminal-wezterm",
-  "name": { "en": "WezTerm Terminal", "ko": "WezTerm 터미널" }, "version": "0.0.25",
+  "name": { "en": "WezTerm Terminal", "ko": "WezTerm 터미널" }, "version": "0.0.26",
   "appVersionRequirement": "0.0.1",
   "description": { "en": "Terminal view rendered from the WezTerm provider frame.", "ko": "WezTerm 공급자 프레임을 렌더링하는 터미널 뷰입니다." },
   "entry": "main.js", "permissions": ["ui", "ui:statusbar", "commands", "programs", "sidecar", "secrets", "terminal"],
-  "implements": [{ "id": "soksak-spec-plugin-terminal", "version": "0.0.8" }],
+  "implements": [{ "id": "soksak-spec-plugin-terminal", "version": "0.0.10" }],
   "contributes": {
     "commands": [
       { "name": "status", "title": { "en": "Terminal status", "ko": "터미널 상태" } },
