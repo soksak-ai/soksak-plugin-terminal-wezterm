@@ -4,7 +4,7 @@
   "appVersionRequirement": "0.0.1",
   "description": { "en": "Terminal view rendered from the WezTerm provider frame.", "ko": "WezTerm 공급자 프레임을 렌더링하는 터미널 뷰입니다." },
   "entry": "main.js", "permissions": ["ui", "ui:statusbar", "commands", "programs", "sidecar", "secrets", "terminal", "clipboard:read", "clipboard:write"],
-  "implements": [{ "id": "soksak-spec-plugin-terminal", "version": "0.0.13" }],
+  "implements": [{ "id": "soksak-spec-plugin-terminal", "version": "0.0.22" }],
   "contributes": {
     "commands": [
       { "name": "status", "title": { "en": "Terminal status", "ko": "터미널 상태" } },
@@ -29,6 +29,7 @@
       { "name": "copy", "title": { "en": "Copy the selection", "ko": "선택 복사" } },
       { "name": "paste", "title": { "en": "Paste terminal input", "ko": "터미널 입력 붙여넣기" }, "danger": "inject" },
       { "name": "drop", "title": { "en": "Drop files or images", "ko": "파일·이미지 드롭" }, "danger": "inject" },
+      { "name": "image.present", "title": { "en": "Present a terminal image", "ko": "터미널 이미지 표시" } },
       { "name": "input.compose", "title": { "en": "Compose input text", "ko": "입력 텍스트 조합" }, "danger": "inject" }
     ],
     "nodes": [{ "id": "terminal-root" }, { "id": "terminal-screen" }, { "id": "terminal-input" }, { "id": "terminal-drop-target" }, { "id": "terminal-restore-status" }, { "id": "pane" }, { "id": "gutter" }],
